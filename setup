@@ -1,0 +1,4 @@
+open the frontend and backend folders in your coding platform like VS Code and in termianl inside the folder run "npm install" to download the required resources.
+
+Inside the backend folder create a ".env" file and inside it create two variables "PORT" and "MONGO_URI" and assign them the values, for port assign a port number and
+for "MONGO_URI" assign the connection string from the mongoDB.
