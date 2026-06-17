@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dashboard{
+    height: 100vh;
+    /* width: ; */
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dashboard aside{
+    padding: 10%;
+    background-color: black;
+    color: white;
+}
+.dashboard aside h1,li{
+    margin: 7% 6% 15% 4%;
+}
+.dashboard li{
+    list-style: none;
+
+}
+.dashboard li:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.dashboard li:first-child{
+    color: blue;
+}
+.dashboard main{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.dashboard header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(117, 110, 110);
+}
+.dashboard .report{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .report h1{
+    color: blue;
+}
+.dashboard .report div{
+    padding: 1%;
+    width: 21%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(117, 110, 110);
+}
+.dashboard section{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .enrollments,.notice{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(117, 110, 110);
+    padding: 1%;
+}
+.dashboard .enrollments{
+    width: 60%;
+}
+.dashboard .notice{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.dashboard table{
+    padding: 1vh;
+    width: 100%;
+    line-height: 5vh;
+    
+}
+.dashboard td,th{
+    text-align: left;
+    margin: 1vh;
+    border-bottom: 1px solid rgba(182, 179, 179,0.3);
+}
+@media(max-width:768px){
+    .dashboard{
+        grid-template-columns: 25vw 75vw;
+    }
+    .dashboard .report{
+        flex-direction: column;
+
+    }
+    .dashboard .report div{
+        width: 95%;
+    }
+    .dashboard section{
+        flex-direction: column;
+    }
+    .dashboard .enrollments,.notice{
+        width: 95%;
+    }
+}
